@@ -104,25 +104,23 @@ img{
 }
 
 /* Герой */
-.thumb{
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: 
-    linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/backgroundhero.jpg);
-    background-position: center;
-    background-size: cover;
-    background-color: #C4C4C4;
-}
 .hero{
     padding-top: 200px ;
     padding-bottom: 200px;
     text-align: center;
     
+    max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/backgroundhero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-color: #C4C4C4;
 }
 .hero .title{
     padding-left: 252px;
@@ -243,11 +241,14 @@ img{
     display: flex;
 }
 .member-list .item{
-    background-color: var(--main-background-color);
+    background-color: 
+    var(--main-background-color);
     text-align: center;
     box-shadow: 
-    0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .member-list .item+.item {
     margin-left: var(--main-distance-element);
@@ -292,6 +293,13 @@ img{
     flex-basis: calc(100%/3 - var(--main-distance-element));
     margin-left: var(--main-distance-element);
     margin-top: var(--main-distance-element);
+}
+.work-list .item:hover,
+.work-list .item:focus{
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-list .title{
